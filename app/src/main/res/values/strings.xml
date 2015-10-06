@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">凯云端</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_scan">扫一扫</string>
+    <string name="action_help">帮助与反馈</string>
+    <string name="action_settings">设置</string>
+    <string name="bottom_persion">个人</string>
+    <string name="bottom_home">首页</string>
+    <string name="bottom_wuye">物业</string>
+    <string name="bottom_shequ">社区</string>
+    <string name="bottom_paixilai">拍下来</string>
+    <string name="d">ttt</string>
+
+</resources>

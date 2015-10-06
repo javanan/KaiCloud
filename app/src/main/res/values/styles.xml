@@ -1,0 +1,25 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
+        <item name="android:actionBarStyle">@style/actionbar_def_style</item>
+        <item name="android:actionOverflowButtonStyle">@style/myOverFlowButtonStyle</item>
+        <item name="android:titleTextStyle">@style/textcenter</item>
+    </style>
+
+    <!--修改背景颜色-->
+    <style name="actionbar_def_style" parent="@android:style/Widget.Holo.Light.ActionBar">
+        <item name="android:background">#ffcc0003</item>
+    </style>
+
+    <!--修改actionBar右边图片 -->
+    <style name="myOverFlowButtonStyle">
+        <item name="android:src">@drawable/abc_edit_text_material</item>
+    </style>
+
+    <style name="textcenter" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:text">"首页"</item>
+
+    </style>
+
+</resources>

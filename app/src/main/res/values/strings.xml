@@ -9,6 +9,12 @@
     <string name="bottom_wuye">物业</string>
     <string name="bottom_shequ">社区</string>
     <string name="bottom_paixilai">拍下来</string>
+
     <string name="d">ttt</string>
+
+    <string name="forget_password">忘记密码?</string>
+    <string name="login_text">登录</string>
+    <string name="register_text">注册</string>
+    <string name="title_activity_regster">用户注册</string>
 
 </resources>

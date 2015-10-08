@@ -2,6 +2,7 @@ package cloud.kai.com.kaicloud;
 
 
 import android.app.ActionBar;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -16,6 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import cloud.kai.com.kaicloud.com.kaicloud.activity.HomeFragment;
+import cloud.kai.com.kaicloud.com.kaicloud.activity.LoginActivity;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.PaiFragment;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.PersonFragment;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.ShequFragment;
@@ -34,11 +36,18 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
 
     private ActionBar actionBar;
+    private boolean isLogin = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        if (!isLogin) {
+            //go to login
+            Intent intent=new Intent(MainActivity.this, LoginActivity.class);
+            startActivity(intent);
+        }
+
 
         initview();
 
@@ -98,11 +107,10 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
     private void initview() {
         actionBar = getActionBar();
-        if(null!=actionBar){
+        if (null != actionBar) {
             actionBar.setDisplayShowHomeEnabled(false);
 
         }
-
 
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
@@ -159,7 +167,6 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
         }*/
     }
-
 
 
     @Override

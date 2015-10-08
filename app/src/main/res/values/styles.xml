@@ -4,7 +4,7 @@
     <!-- Base application theme. -->
     <style name="AppBaseTheme" parent="android:Theme.Holo.Light">
         <item name="android:actionBarStyle">@style/actionbar_def_style</item>
-
+        <item name="android:homeAsUpIndicator">@mipmap/but_out</item> <!--返回icon-->
     </style>
 
     <!--修改背景颜色-->
@@ -23,13 +23,13 @@
 
         <item name="android:textColor">#ffffffff</item>
 
+
     </style>
 
     <!--修改actionBar右边图片 -->
     <style name="myOverFlowButtonStyle">
         <item name="android:src">@drawable/abc_edit_text_material</item>
     </style>
-
 
 
 

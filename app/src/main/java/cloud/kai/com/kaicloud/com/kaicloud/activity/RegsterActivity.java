@@ -20,6 +20,7 @@ initData();
 
     private void initData() {
         if (actionBar != null) {
+
             actionBar.setDisplayHomeAsUpEnabled(true);
 
         }

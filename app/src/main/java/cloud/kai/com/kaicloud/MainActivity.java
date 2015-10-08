@@ -46,6 +46,7 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
             //go to login
             Intent intent=new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
+           // finish();
         }
 
 

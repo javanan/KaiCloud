@@ -4,7 +4,7 @@
     <string name="action_scan">扫一扫</string>
     <string name="action_help">帮助与反馈</string>
     <string name="action_settings">设置</string>
-    <string name="bottom_persion">个人</string>
+    <string name="bottom_persion">用户</string>
     <string name="bottom_home">首页</string>
     <string name="bottom_wuye">物业</string>
     <string name="bottom_shequ">社区</string>
@@ -16,5 +16,10 @@
     <string name="login_text">登录</string>
     <string name="register_text">注册</string>
     <string name="title_activity_regster">用户注册</string>
-
+    <string name="yz_telphone">验证我的手机:</string>
+    <string name="input_tel_hint">请输入手机号码</string>
+    <string name="register_password_hint">请输入密码</string>
+    <string name="register_password_hint2">请再次输入密码</string>
+    <string name="register_input_yz">请输入验证码</string>
+    <string name="register_yz">验证</string>
 </resources>

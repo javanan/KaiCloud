@@ -20,6 +20,10 @@ public class WuyeFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.wuye_fragment, container, false);
+        View view= inflater.inflate(R.layout.wuye_fragment, container, false);
+
+
+        return view;
+
     }
 }

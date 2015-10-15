@@ -2,40 +2,155 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
+    android:background="#eeeeee"
     tools:context=".PersonFragment">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/person_container_ly"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:clipChildren="false"
-        android:orientation="horizontal">
+        android:layout_height="190dp"
+        android:clipChildren="false">
 
         <android.support.v4.view.ViewPager
             android:id="@+id/scroviewpager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="150dp"
             android:clipChildren="false">
 
         </android.support.v4.view.ViewPager>
-    </LinearLayout>
+
+        <TextView
+            android:id="@+id/person_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="50dp"
+            android:text="广州科学城创新大厦"
+            android:textColor="#f0942b" />
+
+
+        <ImageView
+            android:id="@+id/headImg"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp"
+            android:background="@mipmap/me_head_bg" />
+
+        <cloud.kai.com.kaicloud.com.kaicloud.utils.CircularImage
+            android:id="@+id/head_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="25dp" />
+
+        <TextView
+            android:id="@+id/person_signature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/scroviewpager"
+            android:layout_toRightOf="@id/headImg"
+            android:text="个性签名" />
+
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_signature"
+            android:layout_toRightOf="@id/headImg"
+            android:text="姓名"
+            android:textColor="#f0942b" />
+
+        <ImageView
+            android:id="@+id/person_sex_img"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/person_name"
+            android:layout_alignTop="@id/person_name"
+            android:layout_toEndOf="@id/person_name"
+            android:layout_toRightOf="@id/person_name"
+            android:background="@mipmap/login_logo" />
+    </RelativeLayout>
 
     <ImageView
         android:id="@+id/person_dashed_line1"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_below="@id/person_container_ly"
         android:background="@drawable/dotted_line_gray"
         android:layerType="software" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_below="@id/person_dashed_line1">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/person_message_icon"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:background="@mipmap/individual_me" />
+
+            <TextView
+                android:id="@+id/person_Relatedtome_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/person_message_icon"
+                android:layout_centerHorizontal="true"
+                android:text="与我相关"
+                android:textColor="#f0942b" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:layout_weight="2">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="与我相关的信息一网打尽" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="3">
+
+            <TextView
+                android:id="@+id/person_message_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/messagecount"
+                android:text="10"
+                android:textColor="#ffffff" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/person_message_count"
+                android:background="@mipmap/ic_home_more_red" />
+        </RelativeLayout>
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/person_dashed_line2"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_below="@id/person_dashed_line1"
+        android:layout_marginTop="55dp"
         android:background="@drawable/dotted_line_gray"
         android:layerType="software" />
 </RelativeLayout>

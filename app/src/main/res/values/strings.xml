@@ -22,4 +22,7 @@
     <string name="register_password_hint2">请再次输入密码</string>
     <string name="register_input_yz">请输入验证码</string>
     <string name="register_yz">验证</string>
+    <string name="pai_input_hint">您的分享如礼物般值的期待......</string>
+    <string name="pai_share_bq">选择分享标签:</string>
+    <string name="pai_add_pic">添加照片</string>
 </resources>

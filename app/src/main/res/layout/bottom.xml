@@ -1,66 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="70dp">
+    android:layout_height="50dp">
 
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
         android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton1"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/bottom_home"
-            android:background="@mipmap/home" />
+
+            android:background="@mipmap/botttom_home"
+            android:contentDescription="@string/bottom_home" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton2"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/bottom_wuye"
-            android:background="@mipmap/home" />
+
+            android:background="@mipmap/bottom_wuye"
+            android:contentDescription="@string/bottom_wuye" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:contentDescription="@string/bottom_shequ"
-            android:background="@mipmap/home" />
+
+            android:background="@mipmap/home"
+            android:contentDescription="@string/bottom_shequ" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton4"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
-            android:layout_weight="1"
-            android:background="@mipmap/home"
-            android:contentDescription="@string/bottom_paixilai"/>
 
+            android:background="@mipmap/bottom_paixialai"
+            android:contentDescription="@string/bottom_paixilai" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
 
         <ImageButton
             android:id="@+id/imageButton5"
-            android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:layout_weight="1"
-            android:background="@mipmap/home"
+
+            android:background="@mipmap/bottom_person"
             android:contentDescription="@string/bottom_persion" />
 
     </LinearLayout>
 
-</RelativeLayout>
+</LinearLayout>

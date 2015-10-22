@@ -25,4 +25,8 @@
     <string name="pai_input_hint">您的分享如礼物般值的期待......</string>
     <string name="pai_share_bq">选择分享标签:</string>
     <string name="pai_add_pic">添加照片</string>
+    <string name="username_null">手机号码不能为空</string>
+    <string name="username_err">手机号码不正确</string>
+    <string name="password_length_err">密码长度需在8-16位之间</string>
+    <string name="password_err">密码不能有特殊字符</string>
 </resources>

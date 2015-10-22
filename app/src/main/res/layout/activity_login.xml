@@ -58,7 +58,6 @@
         android:layout_below="@id/login_dashed_line"
         android:background="@color/bright_foreground_material_dark"
         android:gravity="center"
-
         android:hint="密码"
         android:inputType="textPassword"
         android:singleLine="true" />

@@ -13,15 +13,19 @@ public class DBHelper extends SQLiteOpenHelper {
     private static final int version = 1;
     private SQLiteDatabase db;
 
+
     public DBHelper(Context context) {
         super(context, DB_NAME, null, version);
-
 
     }
 
     @Override
     public void onCreate(SQLiteDatabase db) {
         this.db = db;
+        String createLoginTable = "create table login (uid integer primary key autoincrement ,username  varchar(32),password varchar(32), token varchar(32),systemid varchar(32),createtime char(10),alerttime char(10),isautologin boolean)";
+
+        db.execSQL(createLoginTable);
+
     }
 
     @Override

@@ -22,6 +22,9 @@ import cloud.kai.com.kaicloud.com.kaicloud.activity.PaiFragment;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.PersonFragment;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.ShequFragment;
 import cloud.kai.com.kaicloud.com.kaicloud.activity.WuyeFragment;
+import cloud.kai.com.kaicloud.com.kaicloud.db.bean.LoginBean;
+import cloud.kai.com.kaicloud.com.kaicloud.db.service.LoginService;
+import cloud.kai.com.kaicloud.com.kaicloud.utils.L;
 
 
 public class MainActivity extends FragmentActivity implements View.OnClickListener, ViewPager.OnPageChangeListener {
@@ -36,19 +39,24 @@ public class MainActivity extends FragmentActivity implements View.OnClickListen
 
 
     private ActionBar actionBar;
-    private boolean isLogin = false;
+
+
+    private LoginService  loginService;
+    private LoginBean loginBean;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        if (!isLogin) {
+        loginService=new LoginService(getApplicationContext());
+        loginBean=loginService.login();
+        if (loginBean==null) {
+            L.i("数据库没有登录信息，需要进行登录");
             //go to login
             Intent intent=new Intent(MainActivity.this, LoginActivity.class);
             startActivity(intent);
-           // finish();
+            finish();
         }
-
+        setContentView(R.layout.activity_main);
 
         initview();
 
